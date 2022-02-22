@@ -24,6 +24,7 @@ class demoProjectApi extends base_controller {
             const getCustomerList = await this.customer.getCustomerList(req.body);
             this.ok(res, getCustomerList)
         } catch (err) {
+            
             this.error(res, err);
         }
     }
